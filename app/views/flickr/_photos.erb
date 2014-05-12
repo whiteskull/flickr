@@ -1,3 +1,7 @@
-<% @photos.each do |photo| %>
-  <%= image_tag("http://farm#{photo.attr('farm')}.staticflickr.com/#{photo.attr('server')}/#{photo.attr('id')}_#{photo.attr('secret')}.jpg") %>
+<% if @photos.any? %>
+  <% @photos.each do |photo| %>
+    <%= image_tag("http://farm#{photo.attr('farm')}.staticflickr.com/#{photo.attr('server')}/#{photo.attr('id')}_#{photo.attr('secret')}.jpg") %>
+  <% end %>
+<% else %>
+  По Вашему запросу ничего не найдено!
 <% end %>

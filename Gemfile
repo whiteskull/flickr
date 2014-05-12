@@ -29,6 +29,8 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'nokogiri'
 
+gem 'redis-rails'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
