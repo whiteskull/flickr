@@ -1,4 +1,9 @@
 Flickr::Application.routes.draw do
+
+  root to: 'general#index'
+
+  post 'flickr/search'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

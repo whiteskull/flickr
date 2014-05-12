@@ -1,0 +1,9 @@
+<%= form_tag flickr_search_path, remote: true do %>
+
+  <%= text_field_tag :q %>
+
+  <%= submit_tag 'Найти' %>
+
+<% end %>
+
+<div id="flickr-result"></div>
